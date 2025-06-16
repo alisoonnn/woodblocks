@@ -11,5 +11,6 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^5.0.0",
     "sass": "^1.89.2"
-  }
+  },
+  "type": "module"
 }

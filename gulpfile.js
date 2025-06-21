@@ -11,10 +11,11 @@ import uglify from 'gulp-uglify';
 import webp from 'gulp-webp';
 import clean from 'gulp-clean';
 
+
 // Tâche pour copier les polices OTF dans le dossier dist/fonts
 function fonts() {
-  return gulp.src('src/fonts/**/*.{otf,woff,woff2}') // Sélectionne tous les fichiers de fonts
-    .pipe(gulp.dest('dist/fonts')); // Les copie dans le dossier de destination
+  return gulp.src('src/webfonts/**/*.{otf,woff,woff2}') // Sélectionne tous les fichiers de fonts
+    .pipe(gulp.dest('dist/webfonts')); // Les copie dans le dossier de destination
 }
 
 // Tâche pour nettoyer le dossier de destination
@@ -75,6 +76,7 @@ function convertToWebp() {
 // Tâche de surveillance des fichiers Sass
 function watchFiles() {
   gulp.watch('src/scss/**/*.scss', compileSass);
+  gulp.watch('src/js/**/*.js', minifyJS);
 }
 
 // Tâche par défaut (exécutée en tapant simplement 'gulp' dans le terminal)

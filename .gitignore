@@ -13,3 +13,4 @@ node_modules/
 # Ignorer les fichiers sources, mais pas le dossier dist/
 src/
 build/
+img/

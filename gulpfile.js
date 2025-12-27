@@ -79,6 +79,8 @@ function watchFiles() {
   gulp.watch('src/js/**/*.js', minifyJS);
 }
 
+// im changing
+
 // Tâche par défaut (exécutée en tapant simplement 'gulp' dans le terminal)
 export default gulp.series(
     fonts,
